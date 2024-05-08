@@ -19,7 +19,7 @@ def compress_image(input_file, quality=50):
     img_format = input_file.name.split(".")[-1].lower()
     
     if img_format not in ["jpg", "jpeg"]:
-        st.warning("Only JPEG format is supported for compression. Converting the image to JPEG...")
+        st.warning("The compression service exclusively supports JPEG format. Converting the image to JPEG...")
         img = img.convert("RGB")
     
     img.save(output_buffer, format='JPEG', quality=quality)
