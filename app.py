@@ -1,8 +1,10 @@
-import streamlit as st
-import os
-from pydub import AudioSegment
-from PIL import Image
 import io
+import os
+
+import streamlit as st
+from PIL import Image
+from pydub import AudioSegment
+
 
 # Function to compress audio
 def compress_audio(input_file, bitrate='64k'):
